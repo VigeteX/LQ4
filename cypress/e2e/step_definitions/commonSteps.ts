@@ -1,12 +1,7 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import { mainPage } from "../pageobject/mainPage";
 import { commonPage } from "../pageobject/сommonPage";
-// import { data } from "../../fixtures/data.json";
 const data = require("../../fixtures/data.json");
-
-Given("I am on the telnyx page", () => {
-    mainPage.visit_telnyx();
-});
 
 When("I click on the green text button", () => {
     mainPage.clickGreenTextButton();
